@@ -1,0 +1,119 @@
+/* Tổng quan */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tiêu đề chính */
+  h1, h2, h3 {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  /* Accordion */
+  .accordion-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  
+  .accordion-header {
+    background-color: #e7f1ff;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .accordion-header:hover {
+    background-color: #d6e7ff;
+  }
+  
+  .accordion-button {
+    font-size: 1em;
+    color: #0056b3;
+    background: none;
+    border: none;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .accordion-button:hover {
+    color: #003d80;
+  }
+  
+  /* Nội dung accordion */
+  .accordion-body {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Form và các nút */
+  form {
+    margin: 20px 0;
+  }
+  
+  input[type="number"], button {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="number"]:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Các thông báo */
+  .alert {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+  }
+  
+  .alert-success {
+    background-color: #e6ffed;
+    color: #256d27;
+    border: 1px solid #c9e7d3;
+  }
+  
+  /* Định dạng khác */
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-primary {
+    color: #007bff;
+  }  

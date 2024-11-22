@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập Array tu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <div class="form-container">
+            <div class="input-group">
+              <input type="number" id="inputNum" placeholder="Nhập số n" />
+              <button type="button" onclick="getNumber()">Thêm số</button>
+            </div>
+            <div class="result">
+              <span id="txtArray"></span>
+            </div>
+
+            <!-- Accordion -->
+            <div class="accordion">
+              <!-- Tổng số dương -->
+              <div class="accordion-item">
+                <button onclick="toggleAccordion('collapseOne')">
+                  1️⃣ Tổng số dương
+                </button>
+                <div id="collapseOne" class="accordion-content">
+                  <button onclick="sumPositive()">Tính tổng</button>
+                  <div class="result"><span id="txtSum"></span></div>
+                </div>
+              </div>
+
+              <!-- Đếm số dương -->
+              <div class="accordion-item">
+                <button onclick="toggleAccordion('collapseTwo')">
+                  2️⃣ Đếm số dương
+                </button>
+                <div id="collapseTwo" class="accordion-content">
+                  <button onclick="countPositive()">Đếm số</button>
+                  <div class="result"><span id="txtCount"></span></div>
+                </div>
+              </div>
+
+              <!-- Tìm số nhỏ nhất -->
+              <div class="accordion-item">
+                <button onclick="toggleAccordion('collapseThree')">
+                  3️⃣ Tìm số nhỏ nhất
+                </button>
+                <div id="collapseThree" class="accordion-content">
+                  <button onclick="findMin()">Tìm số nhỏ nhất</button>
+                  <div class="result"><span id="txtMin"></span></div>
+                </div>
+              </div>
+
+              <!-- Tìm số dương nhỏ nhất -->
+              <div class="accordion-item">
+                <button onclick="toggleAccordion('collapseFour')">
+                  4️⃣ Tìm số dương nhỏ nhất
+                </button>
+                <div id="collapseFour" class="accordion-content">
+                  <button onclick="findMinPos()">Tìm số dương nhỏ nhất</button>
+                  <div class="result"><span id="txtMinPos"></span></div>
+                </div>
+              </div>
+
+              <!-- Tìm số chẵn cuối cùng -->
+              <div class="accordion-item">
+                <button onclick="toggleAccordion('collapseFive')">
+                  5️⃣ Tìm số chẵn cuối cùng
+                </button>
+                <div id="collapseFive" class="accordion-content">
+                  <button onclick="findEven()">Tìm số chẵn</button>
+                  <div class="result"><span id="txtEven"></span></div>
+                </div>
+              </div>
+
+              <!-- Đổi chỗ -->
+              <div class="accordion-item">
+                <button onclick="toggleAccordion('collapseSix')">
+                  6️⃣ Đổi chỗ
+                </button>
+                <div id="collapseSix" class="accordion-content">
+                  <div class="input-group">
+                    <input
+                      type="number"
+                      id="inputIndex1"
+                      placeholder="Nhập số vị trí 1"
+                    />
+                    <input
+                      type="number"
+                      id="inputIndex2"
+                      placeholder="Nhập số vị trí 2"
+                    />
+                  </div>
+                  <button onclick="changePosition()">Đổi chỗ</button>
+                  <div class="result"><span id="txtChangePos"></span></div>
+                </div>
+              </div>
+
+              <!-- Sắp xếp tăng dần -->
+              <div class="accordion-item">
+                <button onclick="toggleAccordion('collapseSeven')">
+                  7️⃣ Sắp xếp tăng dần
+                </button>
+                <div id="collapseSeven" class="accordion-content">
+                  <button onclick="sortIncrease()">Sắp xếp</button>
+                  <div class="result"><span id="txtIncrease"></span></div>
+                </div>
+              </div>
+
+              <!-- Tìm số nguyên tố đầu tiên -->
+              <div class="accordion-item">
+                <button onclick="toggleAccordion('collapseEight')">
+                  8️⃣ Tìm số nguyên tố đầu tiên
+                </button>
+                <div id="collapseEight" class="accordion-content">
+                  <button onclick="findPrime()">Tìm số nguyên tố</button>
+                  <div class="result"><span id="txtPrime"></span></div>
+                </div>
+              </div>
+
+              <!-- Đếm số nguyên -->
+              <div class="accordion-item">
+                <button onclick="toggleAccordion('collapseNine')">
+                  9️⃣ Đếm số nguyên
+                </button>
+                <div id="collapseNine" class="accordion-content">
+                  <div class="input-group">
+                    <input
+                      type="number"
+                      id="inputFloat"
+                      placeholder="Nhập số"
+                    />
+                  </div>
+                  <button onclick="getFloat()">Thêm số</button>
+                  <div class="result"><span id="txtArrayFloat"></span></div>
+                  <button onclick="findInt()">Đếm số nguyên</button>
+                  <div class="result"><span id="txtInt"></span></div>
+                </div>
+              </div>
+
+              <!-- So sánh số lượng số âm và dương -->
+              <div class="accordion-item">
+                <button onclick="toggleAccordion('collapseTen')">
+                  🔟 So sánh số lượng số âm và dương
+                </button>
+                <div id="collapseTen" class="accordion-content">
+                  <button onclick="compareNum()">So sánh</button>
+                  <div class="result"><span id="txtCompare"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
